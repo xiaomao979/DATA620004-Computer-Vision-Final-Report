@@ -139,7 +139,7 @@ def cutout_data(x, y, alpha=1.0, use_cuda=True):
     x_cutout = x * mask
     #lam = 1 - ((bbx2 - bbx1) * (bby2 - bby1) / (x.size()[-1] * x.size()[-2]))
     
-    return x, y
+    return x_cutout, y
 
 
 
